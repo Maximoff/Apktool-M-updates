@@ -1,8 +1,8 @@
 {
     "lang": "sq",
-    "build": 12345,
-    "name": "File_Name",
-    "size": "1.1 Mb",
-    "date": "27/07/2026 00:00 (GMT+3)",
-    "changes": "Bugs rregulluar.\nKontrolli i përkthyesit 🌚"
+    "build": 2026072801,
+    "name": "Apktool_M_v2.4.0-260728(2026072801)",
+    "size": "15,68 MiB",
+    "date": "28/07/2026 01:01 (GMT+3)",
+    "changes": "E re në versionin 260728:\n- Zmadhimi me majë dhe informacioni rreth përdorimit janë shtuar në pikatore me ngjyra;\n- navigim i përmirësuar përmes redaktuesit të tekstit;\n- njoftimi i shtuar për një lojtar që punon;\n- emërtimi fiks i skedarëve apks gjatë nxjerrjes së aplikacioneve të instaluara;\n- transferimi i kontrollit për përditësime të programit në GitHub;\n- përmirësime dhe rregullime të vogla;"
 }

@@ -1,8 +1,8 @@
 {
     "lang": "tr",
-    "build": 12345,
-    "name": "File_Name",
-    "size": "1.1 Mb",
-    "date": "27/07/2026 00:00 (GMT+3)",
-    "changes": "Hatalar düzeltildi.\nÇevirmen kontrolü 🌚"
+    "build": 2026072801,
+    "name": "Apktool_M_v2.4.0-260728(2026072801)",
+    "size": "15,68 MiB",
+    "date": "28/07/2026 01:01 (GMT+3)",
+    "changes": "260728 sürümündeki yenilikler:\n- renkli damlalığa kıstırma yakınlaştırma ve kullanımla ilgili bilgiler eklendi;\n- metin düzenleyicide geliştirilmiş gezinme;\n- çalışan bir oyuncu hakkında bildirim eklendi;\n- yüklü uygulamaları çıkarırken apks dosyalarının sabit adlandırılması;\n- program güncellemelerini kontrol etmenin GitHub'a aktarılması;\n- küçük iyileştirmeler ve düzeltmeler;"
 }

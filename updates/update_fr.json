@@ -1,8 +1,8 @@
 {
     "lang": "fr",
-    "build": 12345,
-    "name": "File_Name",
-    "size": "1.1 Mb",
-    "date": "27/07/2026 00:00 (GMT+3)",
-    "changes": "Bugs corrigés.\nVérification du traducteur 🌚"
+    "build": 2026072801,
+    "name": "Apktool_M_v2.4.0-260728(2026072801)",
+    "size": "15,68 MiB",
+    "date": "28/07/2026 01:01 (GMT+3)",
+    "changes": "Nouveau dans la version 260728 :\n- Un zoom par pincement et des informations sur l'utilisation ont été ajoutés à la pipette de couleur ;\n- navigation améliorée via l'éditeur de texte ;\n- ajout d'une notification concernant un joueur actif ;\n- correction du nom des fichiers apks lors de l'extraction des applications installées ;\n- transfert de la vérification des mises à jour du programme vers GitHub ;\n- améliorations et correctifs mineurs ;"
 }

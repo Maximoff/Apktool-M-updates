@@ -1,8 +1,8 @@
 {
     "lang": "in",
-    "build": 12345,
-    "name": "File_Name",
-    "size": "1.1 Mb",
-    "date": "27/07/2026 00:00 (GMT+3)",
-    "changes": "Bug diperbaiki.\nPeriksa penerjemah 🌚"
+    "build": 2026072801,
+    "name": "Apktool_M_v2.4.0-260728(2026072801)",
+    "size": "15,68 MiB",
+    "date": "28/07/2026 01:01 (GMT+3)",
+    "changes": "Baru di versi 260728:\n- pinch zoom dan informasi tentang penggunaan telah ditambahkan ke pipet warna;\n- peningkatan navigasi melalui editor teks;\n- menambahkan pemberitahuan tentang pemain yang berfungsi;\n- Memperbaiki penamaan file apks saat mengekstraksi aplikasi yang diinstal;\n- transfer pemeriksaan pembaruan program ke GitHub;\n- perbaikan dan perbaikan kecil;"
 }

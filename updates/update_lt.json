@@ -1,8 +1,8 @@
 {
     "lang": "lt",
-    "build": 12345,
-    "name": "File_Name",
-    "size": "1.1 Mb",
-    "date": "27/07/2026 00:00 (GMT+3)",
-    "changes": "Ištaisytos klaidos.\nVertėjo patikra 🌚"
+    "build": 2026072801,
+    "name": "Apktool_M_v2.4.0-260728(2026072801)",
+    "size": "15,68 MiB",
+    "date": "28/07/2026 01:01 (GMT+3)",
+    "changes": "Nauja 260728 versijoje:\n- Prie spalvoto lašintuvo pridėtas priartinimas ir informacija apie naudojimą;\n- patobulintas naršymas per teksto rengyklę;\n- pridėtas pranešimas apie veikiantį grotuvą;\n- fiksuotas apks failų įvardijimas išskleidžiant įdiegtas programas;\n- programos atnaujinimų tikrinimo perkėlimas į GitHub;\n- smulkūs patobulinimai ir pataisymai;"
 }

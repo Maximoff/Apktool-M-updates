@@ -1,8 +1,8 @@
 {
     "lang": "en",
-    "build": 12345,
-    "name": "File_Name",
-    "size": "1.1 Mb",
-    "date": "27/07/2026 00:00 (GMT+3)",
-    "changes": "Bugs fixed.\nTranslator check 🌚"
+    "build": 2026072801,
+    "name": "Apktool_M_v2.4.0-260728(2026072801)",
+    "size": "15,68 MiB",
+    "date": "28/07/2026 01:01 (GMT+3)",
+    "changes": "New in version 260728:\n- pinch zoom and information about use have been added to the color eyedropper;\n- improved navigation through the text editor;\n- added notification about a working player;\n- fixed naming of apks files when extracting installed applications;\n- transfer of checking for program updates to GitHub;\n- minor improvements and fixes;"
 }

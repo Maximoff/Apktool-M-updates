@@ -1,8 +1,8 @@
 {
     "lang": "vi",
-    "build": 12345,
-    "name": "File_Name",
-    "size": "1.1 Mb",
-    "date": "27/07/2026 00:00 (GMT+3)",
-    "changes": "Đã sửa lỗi.\nKiểm tra người dịch 🌚"
+    "build": 2026072801,
+    "name": "Apktool_M_v2.4.0-260728(2026072801)",
+    "size": "15,68 MiB",
+    "date": "28/07/2026 01:01 (GMT+3)",
+    "changes": "Mới trong phiên bản 260728:\n- thu phóng chụm và thông tin về cách sử dụng đã được thêm vào ống nhỏ mắt màu;\n- cải thiện điều hướng thông qua trình soạn thảo văn bản;\n- thêm thông báo về một trình phát đang hoạt động;\n- sửa lỗi đặt tên tệp apks khi giải nén các ứng dụng đã cài đặt;\n- chuyển việc kiểm tra các bản cập nhật chương trình sang GitHub;\n- cải tiến và sửa lỗi nhỏ;"
 }

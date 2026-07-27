@@ -1,8 +1,8 @@
 {
     "lang": "ro",
-    "build": 12345,
-    "name": "File_Name",
-    "size": "1.1 Mb",
-    "date": "27/07/2026 00:00 (GMT+3)",
-    "changes": "Erori remediate.\nVerificarea traducătorului 🌚"
+    "build": 2026072801,
+    "name": "Apktool_M_v2.4.0-260728(2026072801)",
+    "size": "15,68 MiB",
+    "date": "28/07/2026 01:01 (GMT+3)",
+    "changes": "Nou în versiunea 260728:\n- la pipeta colorată au fost adăugate zoom-ul și informațiile despre utilizare;\n- navigare îmbunătățită prin editorul de text;\n- a adăugat notificare despre un jucător care lucrează;\n- soluționarea denumirii fișierelor apks la extragerea aplicațiilor instalate;\n- transferul verificării actualizărilor programului pe GitHub;\n- îmbunătățiri și remedieri minore;"
 }

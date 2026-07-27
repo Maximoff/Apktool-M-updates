@@ -1,8 +1,8 @@
 {
     "lang": "hu",
-    "build": 12345,
-    "name": "File_Name",
-    "size": "1.1 Mb",
-    "date": "27/07/2026 00:00 (GMT+3)",
-    "changes": "Hibák javítva.\nFordító ellenőrzés 🌚"
+    "build": 2026072801,
+    "name": "Apktool_M_v2.4.0-260728(2026072801)",
+    "size": "15,68 MiB",
+    "date": "28/07/2026 01:01 (GMT+3)",
+    "changes": "Új a 260728-as verzióban:\n- a csipetnyi zoom és a használati információk hozzáadva a színes pipettához;\n- jobb navigáció a szövegszerkesztőben;\n- hozzáadott értesítés egy működő játékosról;\n- az apks fájlok rögzített elnevezése a telepített alkalmazások kicsomagolásakor;\n- a programfrissítések ellenőrzésének átvitele a GitHubba;\n- kisebb fejlesztések és javítások;"
 }
