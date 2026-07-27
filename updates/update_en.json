@@ -1,0 +1,8 @@
+{
+    "lang": "en",
+    "build": 12345,
+    "name": "File_Name",
+    "size": "1.1 Mb",
+    "date": "18/07/2026 15:48 (GMT+3)",
+    "changes": "Bugs fixed.\nAdded support for Android 16."
+}

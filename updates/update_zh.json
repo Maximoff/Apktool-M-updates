@@ -1,0 +1,8 @@
+{
+    "lang": "zh",
+    "build": 12345,
+    "name": "File_Name",
+    "size": "1.1 Mb",
+    "date": "18/07/2026 15:48 (GMT+3)",
+    "changes": "错误已修复。\n添加了对 Android 16 的支持。"
+}
