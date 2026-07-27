@@ -1,0 +1,40 @@
+name: Translate updates
+
+on:
+  push:
+    paths:
+      - "updates/update_ru.json"
+      - "translate.py"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Translate
+        run: python translate.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add updates/
+
+          if git diff --cached --quiet; then
+            echo "Nothing changed"
+          else
+            git commit -m "Update translations"
+            git push
+          fi
