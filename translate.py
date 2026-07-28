@@ -6,8 +6,8 @@ import urllib.request
 
 LANGUAGES = [
     "ar", "bg", "cs", "de", "el", "es", "en", "fa", "fr", "he",
-    "in", "it", "iw", "ko", "lt", "my", "pt", "ro", "ru",
-    "sq", "tr", "uk", "vi", "zh", "hu", "pl", "uz", "ja"
+    "in", "it", "iw", "ko", "lt", "my", "pt", "ro", "ru", "sq",
+    "tr", "uk", "vi", "zh", "hu", "pl", "uz", "ja"
 ]
 
 URL = "https://translate.googleapis.com/translate_a/single"
