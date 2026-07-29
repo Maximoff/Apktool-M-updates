@@ -7,7 +7,7 @@
     "size_armeabi-v7a": "12,17 MiB",
     "size_x86": "12,91 MiB",
     "size_x86_64": "12,75 MiB",
-    "date": "29/07/2026 14:58 (GMT+3)",
+    "date": "29/07/2026 14:59 (GMT+3)",
     "vt_url": "https://www.virustotal.com/gui/file/c427b62b2441766ec556015867b40a0f8524aea801c8917762e158afe2103250/detection",
     "changes": "バージョン 260729 の新機能:\n- アプリケーションのクラッシュにつながる、バックアップから設定を復元する際のエラーを修正しました。"
 }
