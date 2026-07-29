@@ -16,6 +16,8 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0"
 }
 
+VERSION = "2.4.0"
+
 
 def translate(text, lang):
     params = {
@@ -58,8 +60,11 @@ for lang in LANGUAGES:
         json.dump(update, f, ensure_ascii=False, indent=4)
         
 if "GITHUB_OUTPUT" in os.environ:
+    build = str(original["build"])
+    short_build = build[2:8]
+    
     with open(os.environ["GITHUB_OUTPUT"], "a") as f:
-        print("tag=v{}".format(original["build"]), file=f)
+        print("tag={}-{}".format(VERSION, short_build), file=f)
         print("base={}".format(original["name"]), file=f)
         print("body<<EOF", file=f)
         print(original["changes"], file=f)
