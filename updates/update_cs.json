@@ -7,7 +7,7 @@
     "size_armeabi-v7a": "12,17 MiB",
     "size_x86": "12,91 MiB",
     "size_x86_64": "12,75 MiB",
-    "date": "28/07/2026 20:10 (GMT+3)",
+    "date": "28/07/2026 20:11 (GMT+3)",
     "vt_url": "https://www.virustotal.com/gui/file/aac28f8f264c7fed778bef3efd5581ac08cfc48734530af0c6c440034e7f9032/detection",
     "changes": "Novinka ve verzi 260728(2):\n- do barevného kapátka byly přidány pinch zoom a informace o použití;\n- vylepšená navigace v textovém editoru;\n- přidáno upozornění na fungujícího hráče;\n- opraveno pojmenování souborů apks při extrahování nainstalovaných aplikací;\n- přenos kontroly aktualizací programu na GitHub;\n- drobná vylepšení a opravy;"
 }

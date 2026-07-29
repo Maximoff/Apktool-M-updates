@@ -7,7 +7,7 @@
     "size_armeabi-v7a": "12,17 MiB",
     "size_x86": "12,91 MiB",
     "size_x86_64": "12,75 MiB",
-    "date": "28/07/2026 20:10 (GMT+3)",
+    "date": "28/07/2026 20:11 (GMT+3)",
     "vt_url": "https://www.virustotal.com/gui/file/aac28f8f264c7fed778bef3efd5581ac08cfc48734530af0c6c440034e7f9032/detection",
-    "changes": "Nowość w wersji 260728(2):\n- do kroplomierza kolorów dodano zoom szczypiący oraz informacje o użyciu;\n- poprawiona nawigacja po edytorze tekstu;\n- dodano powiadomienie o działającym odtwarzaczu;\n- poprawiono nazewnictwo plików apks podczas wyodrębniania zainstalowanych aplikacji;\n- przeniesienie sprawdzania dostępności aktualizacji programu do GitHuba;\n- drobne ulepszenia i poprawki;"
+    "changes": "Nowość w wersji 260728(2):\n- do kroplomierza kolorów dodano zoom szczypiący oraz informacje o użyciu;\n- poprawiona nawigacja po edytorze tekstu;\n- dodano powiadomienie o działającym odtwarzaczu;\n- poprawiono nazewnictwo plików apks podczas wyodrębniania zainstalowanych aplikacji;\n- przeniesienie sprawdzania aktualizacji programu do GitHuba;\n- drobne ulepszenia i poprawki;"
 }

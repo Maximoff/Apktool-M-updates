@@ -7,7 +7,7 @@
     "size_armeabi-v7a": "12,17 MiB",
     "size_x86": "12,91 MiB",
     "size_x86_64": "12,75 MiB",
-    "date": "28/07/2026 20:10 (GMT+3)",
+    "date": "28/07/2026 20:11 (GMT+3)",
     "vt_url": "https://www.virustotal.com/gui/file/aac28f8f264c7fed778bef3efd5581ac08cfc48734530af0c6c440034e7f9032/detection",
     "changes": "버전 260728(2)의 새로운 기능:\n- 컬러 스포이드에 핀치 줌 및 사용 정보가 추가되었습니다.\n- 텍스트 편집기를 통한 향상된 탐색;\n- 작업 중인 플레이어에 대한 알림이 추가되었습니다.\n- 설치된 애플리케이션을 추출할 때 apks 파일 이름이 고정되었습니다.\n- 프로그램 업데이트 확인을 GitHub로 이전합니다.\n- 사소한 개선 및 수정"
 }

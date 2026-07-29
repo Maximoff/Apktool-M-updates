@@ -7,7 +7,7 @@
     "size_armeabi-v7a": "12,17 MiB",
     "size_x86": "12,91 MiB",
     "size_x86_64": "12,75 MiB",
-    "date": "28/07/2026 20:10 (GMT+3)",
+    "date": "28/07/2026 20:11 (GMT+3)",
     "vt_url": "https://www.virustotal.com/gui/file/aac28f8f264c7fed778bef3efd5581ac08cfc48734530af0c6c440034e7f9032/detection",
     "changes": "New in version 260728(2):\n- pinch zoom and information about use have been added to the color eyedropper;\n- improved navigation through the text editor;\n- added notification about a working player;\n- fixed naming of apks files when extracting installed applications;\n- transfer of checking for program updates to GitHub;\n- minor improvements and fixes;"
 }

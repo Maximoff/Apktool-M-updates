@@ -7,7 +7,7 @@
     "size_armeabi-v7a": "12,17 MiB",
     "size_x86": "12,91 MiB",
     "size_x86_64": "12,75 MiB",
-    "date": "28/07/2026 20:10 (GMT+3)",
+    "date": "28/07/2026 20:11 (GMT+3)",
     "vt_url": "https://www.virustotal.com/gui/file/aac28f8f264c7fed778bef3efd5581ac08cfc48734530af0c6c440034e7f9032/detection",
     "changes": "E re në versionin 260728 (2):\n- Zmadhimi me majë dhe informacioni rreth përdorimit janë shtuar në pikatore me ngjyra;\n- navigim i përmirësuar përmes redaktuesit të tekstit;\n- njoftimi i shtuar për një lojtar që punon;\n- emërtimi fiks i skedarëve apks gjatë nxjerrjes së aplikacioneve të instaluara;\n- transferimi i kontrollit për përditësime të programit në GitHub;\n- përmirësime dhe rregullime të vogla;"
 }
