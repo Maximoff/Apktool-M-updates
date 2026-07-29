@@ -1,13 +1,13 @@
 {
     "lang": "zh",
-    "build": 2026072802,
-    "name": "Apktool_M_v2.4.0-260728(2026072802)",
+    "build": 2026072901,
+    "name": "Apktool_M_v2.4.0-260729(2026072901)",
     "size": "15,68 MiB",
     "size_arm64-v8a": "12,63 MiB",
     "size_armeabi-v7a": "12,17 MiB",
     "size_x86": "12,91 MiB",
     "size_x86_64": "12,75 MiB",
-    "date": "28/07/2026 20:11 (GMT+3)",
-    "vt_url": "https://www.virustotal.com/gui/file/aac28f8f264c7fed778bef3efd5581ac08cfc48734530af0c6c440034e7f9032/detection",
-    "changes": "版本260728(2)中的新增内容：\n- 彩色滴管中添加了捏合缩放和有关使用的信息；\n- 改进了文本编辑器的导航；\n- 添加了有关正在工作的玩家的通知；\n- 修复了提取已安装应用程序时 apk 文件的命名问题；\n- 将程序更新检查转移到 GitHub；\n- 小改进和修复；"
+    "date": "29/07/2026 14:58 (GMT+3)",
+    "vt_url": "https://www.virustotal.com/gui/file/c427b62b2441766ec556015867b40a0f8524aea801c8917762e158afe2103250/detection",
+    "changes": "版本 260729 中的新增内容：\n- 修复了从备份恢复设置时导致应用程序崩溃的错误；"
 }
