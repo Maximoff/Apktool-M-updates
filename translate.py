@@ -56,5 +56,14 @@ for lang in LANGUAGES:
 
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(update, f, ensure_ascii=False, indent=4)
+        
+if "GITHUB_OUTPUT" in os.environ:
+    with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+        print("tag=v{}".format(original["build"]), file=f)
+        print("base={}".format(original["name"]), file=f)
+        print("body<<EOF", file=f)
+        print(original["changes"], file=f)
+        print("EOF", file=f)
+        
 
 print("Done.")

@@ -1,4 +1,4 @@
-name: Translate updates
+name: Publish Release
 
 on:
   push:
@@ -12,10 +12,12 @@ permissions:
   contents: write
 
 jobs:
-  translate:
+  publish:
+
     runs-on: ubuntu-latest
 
     steps:
+
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
@@ -23,9 +25,10 @@ jobs:
           python-version: "3.x"
 
       - name: Translate
+        id: translate
         run: python translate.py
 
-      - name: Commit changes
+      - name: Commit translations
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
@@ -38,3 +41,16 @@ jobs:
             git commit -m "Update translations"
             git push
           fi
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.translate.outputs.tag }}
+          name: ${{ steps.translate.outputs.tag }}
+          body: ${{ steps.translate.outputs.body }}
+          files: |
+            files/${{ steps.translate.outputs.base }}.apk
+            files/${{ steps.translate.outputs.base }}_arm64-v8a.apk
+            files/${{ steps.translate.outputs.base }}_armeabi-v7a.apk
+            files/${{ steps.translate.outputs.base }}_x86.apk
+            files/${{ steps.translate.outputs.base }}_x86_64.apk
