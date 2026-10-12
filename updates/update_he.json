@@ -1,15 +1,15 @@
 {
     "lang": "he",
-    "build": 2026081801,
-    "name": "Apktool_M_v2.4.0-260818(2026081801)",
-    "size": "15,71 MiB",
-    "size_arm64-v8a": "12,66 MiB",
-    "size_armeabi-v7a": "12,20 MiB",
-    "size_x86": "12,94 MiB",
-    "size_x86_64": "12,78 MiB",
-    "date": "18/08/2026 19:42 (GMT+3)",
-    "loadurl": "https://raw.githubusercontent.com/Maximoff/Apktool-M-updates/main/files/Apktool_M_v2.4.0-260818(2026081801).apk?b=01",
-    "vt_url": "https://www.virustotal.com/gui/file/3a69000250de2a65721054e0aa2e6d93f7c50d9313d073226eac80c9718f50c8/detection",
-    "changes": "חדש בגרסה 260818:\n- נוסף שרת מקומי פשוט, תומך ב-WebDav ובממשק הדפדפן (לקריאה בלבד), זמין בתפריט התיקיות;\n- הוספת את היכולת להגדיר הערה משלך לארכיון בעת ​​דחיסת קבצים;\n- אתה יכול לראות את הערת הארכיון בעת ​​הצגת התוכן;\n- תיקונים ושיפורים קלים;",
-    "strip_changes": null
+    "build": 2026101301,
+    "name": "Apktool_M_v2.4.0-261013(2026101301)",
+    "size": "16,20 MiB",
+    "size_arm64-v8a": "13,16 MiB",
+    "size_armeabi-v7a": "12,70 MiB",
+    "size_x86": "13,44 MiB",
+    "size_x86_64": "13,28 MiB",
+    "date": "13/10/2026 00:14 (GMT+3)",
+    "loadurl": "https://raw.githubusercontent.com/Maximoff/Apktool-M-updates/main/files/Apktool_M_v2.4.0-261013(2026101301).apk?b=01",
+    "vt_url": "https://www.virustotal.com/gui/file/6af538572b938a578dff9aab7610869690dec8d274e216fd0c8a69592c1dc6da/detection",
+    "changes": "חדש בגרסה 261013:\n- המסגרת המובנית עודכנה ל-SDK37;\n- תיקן את ה-zipalign, זה לא עבד כהלכה ולפעמים עלול להשחית את הקובץ;\n- תרגומים מעודכנים;\n- תיקונים ושיפורים קלים;",
+    "strip_changes": ""
 }

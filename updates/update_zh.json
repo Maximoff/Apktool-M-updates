@@ -1,15 +1,15 @@
 {
     "lang": "zh",
-    "build": 2026081801,
-    "name": "Apktool_M_v2.4.0-260818(2026081801)",
-    "size": "15,71 MiB",
-    "size_arm64-v8a": "12,66 MiB",
-    "size_armeabi-v7a": "12,20 MiB",
-    "size_x86": "12,94 MiB",
-    "size_x86_64": "12,78 MiB",
-    "date": "18/08/2026 19:42 (GMT+3)",
-    "loadurl": "https://raw.githubusercontent.com/Maximoff/Apktool-M-updates/main/files/Apktool_M_v2.4.0-260818(2026081801).apk?b=01",
-    "vt_url": "https://www.virustotal.com/gui/file/3a69000250de2a65721054e0aa2e6d93f7c50d9313d073226eac80c9718f50c8/detection",
-    "changes": "版本 260818 中的新增内容：\n- added a simple local server, supports WebDav and browser interface (read-only), available in the folder menu;\n- 添加了在压缩文件时为存档设置自己的注释的功能；\n- you can see the archive comment when viewing the contents;\n- 小修复和改进；",
-    "strip_changes": null
+    "build": 2026101301,
+    "name": "Apktool_M_v2.4.0-261013(2026101301)",
+    "size": "16,20 MiB",
+    "size_arm64-v8a": "13,16 MiB",
+    "size_armeabi-v7a": "12,70 MiB",
+    "size_x86": "13,44 MiB",
+    "size_x86_64": "13,28 MiB",
+    "date": "13/10/2026 00:14 (GMT+3)",
+    "loadurl": "https://raw.githubusercontent.com/Maximoff/Apktool-M-updates/main/files/Apktool_M_v2.4.0-261013(2026101301).apk?b=01",
+    "vt_url": "https://www.virustotal.com/gui/file/6af538572b938a578dff9aab7610869690dec8d274e216fd0c8a69592c1dc6da/detection",
+    "changes": "版本 261013 中的新增内容：\n- 内置框架已更新至SDK37；\n- 修复了 zipalign，它不能正常工作，有时可能会损坏文件；\n- 更新翻译；\n- 小修复和改进；",
+    "strip_changes": ""
 }

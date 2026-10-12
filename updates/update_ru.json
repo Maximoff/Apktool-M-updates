@@ -7,9 +7,9 @@
     "size_armeabi-v7a": "12,70 MiB",
     "size_x86": "13,44 MiB",
     "size_x86_64": "13,28 MiB",
-    "date": "13\/10\/2026 00:14 (GMT+3)",
-    "loadurl": "https:\/\/raw.githubusercontent.com\/Maximoff\/Apktool-M-updates\/main\/files\/Apktool_M_v2.4.0-261013(2026101301).apk?b=01",
-    "vt_url": "https:\/\/www.virustotal.com\/gui\/file\/6af538572b938a578dff9aab7610869690dec8d274e216fd0c8a69592c1dc6da\/detection",
+    "date": "13/10/2026 00:14 (GMT+3)",
+    "loadurl": "https://raw.githubusercontent.com/Maximoff/Apktool-M-updates/main/files/Apktool_M_v2.4.0-261013(2026101301).apk?b=01",
+    "vt_url": "https://www.virustotal.com/gui/file/6af538572b938a578dff9aab7610869690dec8d274e216fd0c8a69592c1dc6da/detection",
     "changes": "Новое в версии 261013:\n- обновлён встроенный фреймворк до SDK37;\n- исправлен zipalign, он работал не совсем корректно и иногда мог испортить файл;\n- обновлены переводы;\n- мелкие исправления и улучшения;",
     "strip_changes": ""
 }

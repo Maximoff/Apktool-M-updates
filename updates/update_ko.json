@@ -1,15 +1,15 @@
 {
     "lang": "ko",
-    "build": 2026081801,
-    "name": "Apktool_M_v2.4.0-260818(2026081801)",
-    "size": "15,71 MiB",
-    "size_arm64-v8a": "12,66 MiB",
-    "size_armeabi-v7a": "12,20 MiB",
-    "size_x86": "12,94 MiB",
-    "size_x86_64": "12,78 MiB",
-    "date": "18/08/2026 19:42 (GMT+3)",
-    "loadurl": "https://raw.githubusercontent.com/Maximoff/Apktool-M-updates/main/files/Apktool_M_v2.4.0-260818(2026081801).apk?b=01",
-    "vt_url": "https://www.virustotal.com/gui/file/3a69000250de2a65721054e0aa2e6d93f7c50d9313d073226eac80c9718f50c8/detection",
-    "changes": "버전 260818의 새로운 기능:\n- 간단한 로컬 서버를 추가하고 WebDav 및 브라우저 인터페이스(읽기 전용)를 지원하며 폴더 메뉴에서 사용할 수 있습니다.\n- 파일을 압축할 때 아카이브에 자신만의 코멘트를 설정하는 기능이 추가되었습니다.\n- 내용을 볼 때 아카이브 댓글을 볼 수 있습니다.\n- 사소한 수정 및 개선",
-    "strip_changes": null
+    "build": 2026101301,
+    "name": "Apktool_M_v2.4.0-261013(2026101301)",
+    "size": "16,20 MiB",
+    "size_arm64-v8a": "13,16 MiB",
+    "size_armeabi-v7a": "12,70 MiB",
+    "size_x86": "13,44 MiB",
+    "size_x86_64": "13,28 MiB",
+    "date": "13/10/2026 00:14 (GMT+3)",
+    "loadurl": "https://raw.githubusercontent.com/Maximoff/Apktool-M-updates/main/files/Apktool_M_v2.4.0-261013(2026101301).apk?b=01",
+    "vt_url": "https://www.virustotal.com/gui/file/6af538572b938a578dff9aab7610869690dec8d274e216fd0c8a69592c1dc6da/detection",
+    "changes": "버전 261013의 새로운 기능:\n- 내장 프레임워크가 SDK37로 업데이트되었습니다.\n- zipalign이 수정되었습니다. 제대로 작동하지 않았고 때로는 파일이 손상될 수 있었습니다.\n- 업데이트된 번역;\n- 사소한 수정 및 개선",
+    "strip_changes": ""
 }
