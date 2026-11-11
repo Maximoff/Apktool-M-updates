@@ -2,6 +2,7 @@ import json
 import os
 import time
 import random
+import uuid
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -12,7 +13,7 @@ LANGUAGES = [
     "tr", "uk", "vi", "zh", "hu", "pl", "uz", "ja"
 ]
 
-URL = "https://translate.googleapis.com/translate_a/single"
+URL = "https://translate.yandex.net/api/v1/tr.json/translate"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0"
@@ -20,20 +21,23 @@ HEADERS = {
 
 VERSION = "2.4.0"
 
-# Задержка между успешными переводами
-REQUEST_DELAY = 2.5
-
-# Максимальное количество попыток одного перевода
+REQUEST_DELAY = 2.0
 MAX_RETRIES = 6
+
+YANDEX_LANG_CODES = {
+    "in": "id",
+    "iw": "he"
+}
 
 
 def translate(text, lang):
+    yandex_lang = YANDEX_LANG_CODES.get(lang, lang)
+
     params = {
-        "client": "gtx",
-        "sl": "ru",
-        "tl": lang,
-        "dt": "t",
-        "q": text
+        "srv": "android",
+        "ucid": uuid.uuid4().hex,
+        "lang": "ru-" + yandex_lang,
+        "text": text
     }
 
     url = URL + "?" + urllib.parse.urlencode(params)
@@ -45,31 +49,39 @@ def translate(text, lang):
             with urllib.request.urlopen(request, timeout=30) as response:
                 data = json.loads(response.read().decode("utf-8"))
 
-            result = "".join(item[0] for item in data[0])
+            if data.get("code") != 200:
+                raise RuntimeError(
+                    "Yandex error for {}: {}".format(lang, data)
+                )
 
-            if not result and text:
-                raise ValueError("Google returned an empty translation")
+            result = data.get("text", [])
 
-            return result
+            if not result or not result[0]:
+                raise RuntimeError(
+                    "Yandex returned empty translation for {}".format(lang)
+                )
+
+            return result[0]
 
         except urllib.error.HTTPError as e:
             if e.code not in (429, 500, 502, 503, 504):
                 raise
 
+            if attempt == MAX_RETRIES - 1:
+                raise
+
             retry_after = e.headers.get("Retry-After")
+
             try:
                 retry_after = float(retry_after) if retry_after else 0
             except ValueError:
                 retry_after = 0
 
-            if attempt == MAX_RETRIES - 1:
-                raise
-
             delay = max(retry_after, min(60, 3 * (2 ** attempt)))
             delay += random.uniform(0, 1)
 
             print(
-                "Google error {} for {}. Retry {}/{} in {:.1f}s".format(
+                "Yandex error {} for {}. Retry {}/{} in {:.1f}s".format(
                     e.code, lang, attempt + 1, MAX_RETRIES, delay
                 )
             )
@@ -80,7 +92,8 @@ def translate(text, lang):
             if attempt == MAX_RETRIES - 1:
                 raise
 
-            delay = min(60, 3 * (2 ** attempt)) + random.uniform(0, 1)
+            delay = min(60, 3 * (2 ** attempt))
+            delay += random.uniform(0, 1)
 
             print(
                 "Connection error for {}. Retry {}/{} in {:.1f}s: {}".format(
@@ -96,7 +109,6 @@ with open("updates/update_ru.json", "r", encoding="utf-8") as f:
 
 
 for lang in LANGUAGES:
-
     update = original.copy()
     update["lang"] = lang
 
@@ -104,9 +116,7 @@ for lang in LANGUAGES:
         update["changes"] = original["changes"]
     else:
         print("Translate:", lang)
-
         update["changes"] = translate(original["changes"], lang)
-
         time.sleep(REQUEST_DELAY)
 
     filename = "updates/update_" + lang + ".json"
