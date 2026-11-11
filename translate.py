@@ -1,6 +1,7 @@
 import json
 import os
 import time
+import random
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -19,6 +20,13 @@ HEADERS = {
 
 VERSION = "2.4.0"
 
+# Задержка между успешными переводами
+REQUEST_DELAY = 2.5
+
+# Максимальное количество попыток одного перевода
+MAX_RETRIES = 6
+
+
 def translate(text, lang):
     params = {
         "client": "gtx",
@@ -28,19 +36,64 @@ def translate(text, lang):
         "q": text
     }
 
-    request = urllib.request.Request(
-        URL + "?" + urllib.parse.urlencode(params),
-        headers=HEADERS
-    )
+    url = URL + "?" + urllib.parse.urlencode(params)
 
-    with urllib.request.urlopen(request, timeout=30) as response:
-        data = json.loads(response.read().decode("utf-8"))
+    for attempt in range(MAX_RETRIES):
+        request = urllib.request.Request(url, headers=HEADERS)
 
-    return "".join(item[0] for item in data[0])
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                data = json.loads(response.read().decode("utf-8"))
+
+            result = "".join(item[0] for item in data[0])
+
+            if not result and text:
+                raise ValueError("Google returned an empty translation")
+
+            return result
+
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 500, 502, 503, 504):
+                raise
+
+            retry_after = e.headers.get("Retry-After")
+            try:
+                retry_after = float(retry_after) if retry_after else 0
+            except ValueError:
+                retry_after = 0
+
+            if attempt == MAX_RETRIES - 1:
+                raise
+
+            delay = max(retry_after, min(60, 3 * (2 ** attempt)))
+            delay += random.uniform(0, 1)
+
+            print(
+                "Google error {} for {}. Retry {}/{} in {:.1f}s".format(
+                    e.code, lang, attempt + 1, MAX_RETRIES, delay
+                )
+            )
+
+            time.sleep(delay)
+
+        except urllib.error.URLError as e:
+            if attempt == MAX_RETRIES - 1:
+                raise
+
+            delay = min(60, 3 * (2 ** attempt)) + random.uniform(0, 1)
+
+            print(
+                "Connection error for {}. Retry {}/{} in {:.1f}s: {}".format(
+                    lang, attempt + 1, MAX_RETRIES, delay, e
+                )
+            )
+
+            time.sleep(delay)
 
 
 with open("updates/update_ru.json", "r", encoding="utf-8") as f:
     original = json.load(f)
+
 
 for lang in LANGUAGES:
 
@@ -51,14 +104,17 @@ for lang in LANGUAGES:
         update["changes"] = original["changes"]
     else:
         print("Translate:", lang)
+
         update["changes"] = translate(original["changes"], lang)
-        time.sleep(0.5)
+
+        time.sleep(REQUEST_DELAY)
 
     filename = "updates/update_" + lang + ".json"
 
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(update, f, ensure_ascii=False, indent=4)
-        
+
+
 if "GITHUB_OUTPUT" in os.environ:
     build = str(original["build"])
     short_build = build[2:8]
@@ -114,5 +170,6 @@ if "GITHUB_OUTPUT" in os.environ:
         print("body<<EOF", file=f)
         print(original["changes"], file=f)
         print("EOF", file=f)
+
 
 print("Done.")
