@@ -29,7 +29,6 @@ YANDEX_LANG_CODES = {
     "iw": "he"
 }
 
-
 def translate(text, lang):
     yandex_lang = YANDEX_LANG_CODES.get(lang, lang)
 
@@ -43,7 +42,15 @@ def translate(text, lang):
     url = URL + "?" + urllib.parse.urlencode(params)
 
     for attempt in range(MAX_RETRIES):
-        request = urllib.request.Request(url, headers=HEADERS)
+        request = urllib.request.Request(
+            url,
+            data=b"{}",
+            headers={
+                "User-Agent": "Mozilla/5.0",
+                "Content-Type": "application/x-www-form-urlencoded;charset=utf-8"
+            },
+            method="POST"
+        )
 
         try:
             with urllib.request.urlopen(request, timeout=30) as response:
@@ -102,7 +109,6 @@ def translate(text, lang):
             )
 
             time.sleep(delay)
-
 
 with open("updates/update_ru.json", "r", encoding="utf-8") as f:
     original = json.load(f)
