@@ -7,9 +7,9 @@
     "size_armeabi-v7a": "12,74 MiB",
     "size_x86": "13,47 MiB",
     "size_x86_64": "13,31 MiB",
-    "date": "20\/11\/2026 15:29 (GMT+3)",
-    "loadurl": "https:\/\/raw.githubusercontent.com\/Maximoff\/Apktool-M-updates\/main\/files\/Apktool_M_v2.4.0-261120(2026112001).apk?b=01",
-    "vt_url": "https:\/\/www.virustotal.com\/gui\/file\/980cf1bc96874f45197cc1d2f0f24879e3d7857a35315188f33ce388cccc6fe3\/detection",
+    "date": "20/11/2026 15:29 (GMT+3)",
+    "loadurl": "https://raw.githubusercontent.com/Maximoff/Apktool-M-updates/main/files/Apktool_M_v2.4.0-261120(2026112001).apk?b=01",
+    "vt_url": "https://www.virustotal.com/gui/file/980cf1bc96874f45197cc1d2f0f24879e3d7857a35315188f33ce388cccc6fe3/detection",
     "changes": "Новое в версии 261120:\n- добавлена поддержка шрифтов WOFF для просмотра;\n- в сортировке списка приложений можно посмотреть отключённые приложения;\n- добавлена настройка количества строк для имён в списках;\n- добавлена настройка для исправления строк в кавычках при переводе;\n- улучшено определение защиты pairip в apk;\n- мелкие исправления и улучшения;",
     "strip_changes": ""
 }
