@@ -12,3 +12,15 @@
 [Архив версий ↗](https://drive.google.com/folderview?id=1bGJXfxuFwhugeTYtUjk_84HXCELzSZBB)
 
 [Лицензионное соглашение](AGREEMENT.MD)
+
+---
+
+### ❤️ Поддержать проект
+
+Если Apktool M оказался вам полезен, вы можете поддержать его разработку.
+
+[![Поддержать на ЮMoney](https://img.shields.io/badge/Поддержать_проект-ЮMoney-8B3FFD?style=for-the-badge)](https://yoomoney.ru/to/410013008761175)
+
+Спасибо за поддержку!
+
+---
